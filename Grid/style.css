@@ -1,0 +1,18 @@
+        * {
+            /*reset en general de todos las etiquetas*/
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none !important;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        main {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
