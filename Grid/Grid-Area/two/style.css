@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "one two two three" "four four five three " "six six six three";
+    gap: 1rem;
+    padding: 2rem 20rem;
+}
+
+main>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: -4px -2px 2px 4px rgba(65, 46, 241, 0.5);
+}
+
+.one {
+    grid-area: one;
+    background-color: aquamarine;
+}
+
+.two {
+    grid-area: two;
+    background-color: rgb(116, 240, 85);
+}
+
+.three {
+    grid-area: three;
+    background-color: rgb(228, 60, 60);
+}
+
+.four {
+    grid-area: four;
+    background-color: rgb(84, 60, 194);
+}
+
+.five {
+    grid-area: five;
+    background-color: rgb(174, 101, 243);
+}
+
+.six {
+    grid-area: six;
+    background-color: rgb(230, 233, 64);
+}
